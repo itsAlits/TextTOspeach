@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto flex items-center py-10 h-screen">
+    <main
+      class="h-full w-full border border-gray-300 shadow flex overflow-hidden"
+    >
+      <!-- sidbar -->
+      <div class="sidebar w-20 h-full">
+        <div class="sidebarMenu pt-5 px-3">
+          <!-- tooltip -->
+          <a href="/index.html">
+            <div
+              class="tooltip tooltip-right bg-transparent border-none shadow-none rounded-xl btn flex items-center"
+              data-tip="Text To Speach"
+            >
+              <!-- tooltip menu -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 0 0 1.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06ZM18.584 5.106a.75.75 0 0 1 1.06 0c3.808 3.807 3.808 9.98 0 13.788a.75.75 0 0 1-1.06-1.06 8.25 8.25 0 0 0 0-11.668.75.75 0 0 1 0-1.06Z"
+                />
+                <path
+                  d="M15.932 7.757a.75.75 0 0 1 1.061 0 6 6 0 0 1 0 8.486.75.75 0 0 1-1.06-1.061 4.5 4.5 0 0 0 0-6.364.75.75 0 0 1 0-1.06Z"
+                />
+              </svg>
+            </div>
+          </a>
+
+          <!-- tooltip -->
+          <div
+            class="tooltip tooltip-right btn rounded-xl btn-neutral flex items-center mt-2"
+            data-tip="ChatGPT"
+          >
+            <!-- tooltip menu -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+
+          <!-- tooltip -->
+          <a href="image.html">
+            <div
+              class="tooltip tooltip-right btn shadow-none border-none rounded-xl bg-transparent flex items-center mt-2"
+              data-tip="Image To Text"
+            >
+              <!-- tooltip menu -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- end sidebar -->
+
+      <div class="mainCanvas w-full py-10">
+        <div class="title ps-10 pb-4">
+          <h1 class="text-xl font-bold">Chat With AI</h1>
+        </div>
+        <div class="border-bottom mt-5"></div>
+        <div class="mainChat h-full w-full">
+          <div
+            class="hasilChat border-bottom h-[85%] w-full p-10 overflow-y-auto"
+          ></div>
+          <div class="chatbox flex justify-center items-center h-[12%]">
+            <input
+              id="chatInput"
+              type="text"
+              placeholder="Masukkan Text"
+              class="border w-[92%] px-4 py-3"
+            />
+            <button id="sendButton" class="btn btn-neutral ms-2 rounded-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document
+        .getElementById("sendButton")
+        .addEventListener("click", async (event) => {
+          event.preventDefault();
+
+          const inputField = document.getElementById("chatInput");
+          const userInput = inputField.value.trim();
+          if (!userInput) return;
+
+          const userChatDiv = document.createElement("div");
+          userChatDiv.className = "chatsaya w-full text-right mt-3";
+          userChatDiv.innerHTML = `<button class="chatsaya bg-neutral max-w-2xl p-3 h-auto text-white rounded-lg text-right">${userInput}</button>`;
+          document.querySelector(".hasilChat").appendChild(userChatDiv);
+
+          inputField.value = "";
+
+          const url = "https://infinite-gpt.p.rapidapi.com/infinite-gpt";
+          const options = {
+            method: "POST",
+            headers: {
+              "x-rapidapi-key":
+                "0089c0ea9emshb7c0443e106f4e7p10a57bjsn3008ca4e0bc2",
+              "x-rapidapi-host": "infinite-gpt.p.rapidapi.com",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              query: userInput,
+            }),
+          };
+
+          try {
+            const response = await fetch(url, options);
+            const result = await response.json();
+
+            const message = result.msg;
+            const chatbotChatDiv = document.createElement("div");
+            chatbotChatDiv.className = "chatbot mt-3";
+            chatbotChatDiv.innerHTML = `<button class="chatsaya bg-primary max-w-2xl p-3 h-auto text-white rounded-lg text-left">${message}</button>`;
+            document.querySelector(".hasilChat").appendChild(chatbotChatDiv);
+
+            const chatContainer = document.querySelector(".hasilChat");
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+          } catch (error) {
+            console.error("Error:", error);
+          }
+        });
+    </script>
+  </body>
+</html>

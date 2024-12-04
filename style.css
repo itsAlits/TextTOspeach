@@ -1,0 +1,38 @@
+* {
+  /* border:  1px solid #151515 !important; */
+  font-family: "Poppins", system-ui;
+}
+
+.sidebar {
+  border-right: 1px solid rgb(209 213 219);;
+}
+
+.border-right {
+  border-right: 1px solid rgb(209 213 219);;
+  margin-left: -100px;
+}
+
+.border-bottom{
+    border-bottom: 1px solid rgb(209 213 219);;
+}
+
+#loadingIcon {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hasiChat{
+    overflow: scroll;
+}
+
+.hidden {
+  display: none;
+}
